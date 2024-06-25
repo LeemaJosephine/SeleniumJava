@@ -19,6 +19,10 @@ public class FindAndSearch {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
+//		driver.navigate().to("https://www.google.com/");
+//		driver.navigate().back();
+//		driver.navigate().forward();
+//		driver.navigate().refresh();
 		
 		// Capture all the links avaialble in the page
 		
@@ -52,6 +56,10 @@ public class FindAndSearch {
 //		} else {
 //			System.out.println("Search unscucessful");
 //		}
+		
+		
+		driver.switchTo().frame("loginIframe");
+		
 	}
 
 }
