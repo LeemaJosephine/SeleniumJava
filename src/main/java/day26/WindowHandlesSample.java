@@ -34,6 +34,8 @@ public class WindowHandlesSample {
 		
 		driver.switchTo().window(windows.get(1));
 		
+		// Validation
+		
 		System.out.println(driver.getTitle());
 		
 		System.out.println("After button click : " +driver.getWindowHandle());
